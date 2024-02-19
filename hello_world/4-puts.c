@@ -4,5 +4,6 @@ int main() {
 
 	puts (message);
 
-	return 0;
+return 0;
+}
 
