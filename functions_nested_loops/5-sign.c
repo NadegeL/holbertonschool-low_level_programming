@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign -Determine le nombre.
+ * int print_sign(int n) -  5 Determine le nombre.
  *
  * @n: le nombre a checker.
  *
