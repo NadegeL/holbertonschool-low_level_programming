@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * _print_sign - Checks if a character is alphabetic.
- * @c: The character to be checked.
+ * print_sign -Determine le nombre.
+ *
+ * @n: le nombre a checker.
  *
  * Returns 1 and prints + if n is greater than zero
  * Returns 0 and prints 0 if n is zero
