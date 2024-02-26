@@ -11,8 +11,7 @@ void print_diagonal(int n)
 	int size;
 	int hauteur;
 
-	if (n < 0)
-
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}
