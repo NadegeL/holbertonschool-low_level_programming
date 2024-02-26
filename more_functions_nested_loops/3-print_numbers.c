@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * print_numbers - Prints numbers from 0 à 9.
- *@numbers:numbers
+ * print_numbers - numbers from 0 à 9.
+ *@numbers:n
  * Return: Always 0.
  */
 
 void print_numbers(void)
+
 {
 	char numbers;
 
