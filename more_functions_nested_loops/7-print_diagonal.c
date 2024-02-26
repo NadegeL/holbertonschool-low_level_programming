@@ -12,7 +12,7 @@ void print_diagonal(int n)
 	int hauteur;
 
 if (n > 0)
-{
+	{
 	for (size = 0; size < n; size++)
 		{
 	for (hauteur = 0; hauteur < size; hauteur++)
@@ -22,10 +22,9 @@ if (n > 0)
 			_putchar('\\');
 			_putchar('\n');
 		}
-	{
+	}
 	else
 	_putchar('\n');
-	}
 }
-}
+
 
