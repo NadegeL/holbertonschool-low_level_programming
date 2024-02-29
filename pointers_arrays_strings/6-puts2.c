@@ -2,25 +2,24 @@
 #include "2-strlen.c"
 
 /**
- * puts2(char *str) - function that prints in rev.
+ * puts2(char *str) - every other character of a string
  *
  *@str: strg
+ *@i: index
+ *@len: longueur
  * Return: Always 0.
  */
 void puts2(char *str)
 
 {
 	int i = 0;
+	int len = 0;
 
-	while (str[i] != '\0')
+	while (str[i++])
+		len++;
 	{
-		_putchar (str[i]);
-		i++;
-
-		if (str[i] % 2 == 0)
-		{
-			_putchar (str[i]);
-			i++;
-		}
+		for(i = 0; i < len; i += 2)
+		_putchar ( str[i] );
 	}
+	_putchar('\n');
 }
