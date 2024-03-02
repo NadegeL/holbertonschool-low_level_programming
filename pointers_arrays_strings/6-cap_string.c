@@ -22,7 +22,7 @@ if (str[i] == ' ' || str[i] == '-' || str[i] == '.')
 	{
 if (isalpha(str[i + 1]))
 	{
-str[i + 1] = _toupper(str[i + 1]);
+str[i + 1] = islower(str[i + 1]);
 	}
 }
 i++;
