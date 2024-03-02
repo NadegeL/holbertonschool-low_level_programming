@@ -4,7 +4,6 @@
  * reverse_array - reverse an array of n
  * @a: an array of integers
  * @n: the number of elements to swap
- * @arr: tableau
  * Return: nothing.
  */
 void reverse_array(int *a, int n)
