@@ -1,11 +1,12 @@
 #include "main.h"
 
 /*
-* string converted to Uppercase
-* string_toupper - convertes char in uppercase
-*string'look up'
-* return 0
-*/
+ * string_toupper - encode string to uppercase
+ *
+ * Return: pointer to encoded string
+ */
+
+
 char *string_toupper(char *str)
 {
 	char *ptr = str;
@@ -18,7 +19,7 @@ if (*ptr >= 'a' && *ptr <= 'z')
 }
 ptr++;
 }
-return str;
+return (str);
 }
 
 
