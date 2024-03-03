@@ -4,25 +4,27 @@
 /*
  * string converted to Uppercase
  * cap_string - converts string to uppercase
- * string - input string
+ * 
  * returns - the converted string
  */
 
 
 char *cap_string(char *str)
 {
-int i = 0;
+    int i = 0;
+    int difference = 'a' - 'A';
 
 while (str[i] != '\0')
     {
-if (islower(str[i]))
+if (str[i] >= 'a' && str[i] <= 'z')
     {
 if (i == 0 || str[i - 1] == ' ' || str[i - 1] == '-' || str[i - 1] == '.')
     {
-    str[i] = toupper(str[i]);
+     str[i] -= difference;
     }
     }
-i++;
+	i++;
     }
-return (str);
+
+    return (str);
 }
