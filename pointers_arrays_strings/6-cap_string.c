@@ -17,7 +17,7 @@ str[0] = str[0] - 32;
 }
 while (str[i] != '\0')
 {
-if (str[i] == ' ' || str[i] == '-' || str[i] == '.')
+if (str[i] == ' ' || str[i] == '-' || str[i] == '.' || i == 0)
 {
 if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 {
