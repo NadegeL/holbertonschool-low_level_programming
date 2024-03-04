@@ -1,13 +1,4 @@
-#include "main.h"
-#include <stdio.h>
 
-/**
- * print_array - print an array of integers
- * @a: an array of integers
- * @n: the number of elements to swap
- *
- * Return: nothing.
- */
 #include "main.h"
 #include <stdio.h>
 
