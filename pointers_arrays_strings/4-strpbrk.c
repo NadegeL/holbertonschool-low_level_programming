@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *strpbrk() - function locates the first occurrence in the string s
+ *strpbrk - function locates the first occurrence in the string s
  *
  *@s: la chaine dans laquelle on chercher
  *@accept: le nb de bytes recherchés
