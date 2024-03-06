@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strspn - Returns the number of bytes in the initial segment of s
+ * strspn - Returns the number of bytes in the initial segment of s
  * @s: the address of memory to print
  * @a: the size of the memory to print
  * Return: Nothing.
