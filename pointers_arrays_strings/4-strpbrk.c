@@ -1,5 +1,5 @@
 #include "main.h"
-#include "string.h"
+
 /**
  *strpbrk() - function locates the first occurrence in the string s
  *
