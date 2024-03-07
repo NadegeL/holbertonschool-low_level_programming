@@ -15,8 +15,8 @@ int is_prime_number(int n)
 	if (n == 2)/*Check if n=2 */
 	{
 		return (1);
-	}
-	if ((n % 2 == 0) || (n % 3 == 0) || (n % 5 == 0))/*Check whether n is divisible by 2 or 3 or 5*/
+	}/*Check whether n is divisible by 2 or 3 or 5*/
+	if ((n % 2 == 0) || (n % 3 == 0) || (n % 5 == 0))
 	{
 		return (0);
 	}
