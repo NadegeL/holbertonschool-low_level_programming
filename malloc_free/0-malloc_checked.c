@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * malloc_checked - returns a pointer to a new string
- *  which is a duplicate of the string
- * @b: duplicate of string
- * Return: char pointer to malloc created memory address or NULL if error
- */
+* malloc_checked - allocate memory with malloc
+* @b: unsigned int type
+* Return: return pointer
+*/
+
 void *malloc_checked(unsigned int b)
 {
 	int *ptr;
