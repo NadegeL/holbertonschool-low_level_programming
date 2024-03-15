@@ -18,13 +18,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (new_dog == NULL)
 	{
-	printf("Erreur.\n");
 		return (NULL);
 	}
 	new_dog->name = strdup(name);
 	if (new_dog->name == NULL)
 	{
-		printf("Erreur.\n");
 		free(new_dog); /* Libérer la mémoire allouée pour la structure du chien*/
 		return (NULL);
 	}
@@ -32,7 +30,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->owner = strdup(owner);
 	if (new_dog->owner == NULL)
 	{
-	printf("Erreur.\n");
 	free(new_dog->name);
 	free(new_dog);
 	return (NULL);
