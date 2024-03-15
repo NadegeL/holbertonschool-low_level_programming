@@ -1,5 +1,5 @@
-#ifndef dog.h
-#define dog.h
+#ifndef dog
+#define dog
 
 /**
  * main - check the code
