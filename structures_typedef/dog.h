@@ -1,5 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef dog.h
+#define dog.h
+
 /**
  * main - check the code
  *
@@ -11,4 +12,6 @@ struct dog
     float age;
     char *owner;
 };
+typedef struct dog my_dog;
+
 
