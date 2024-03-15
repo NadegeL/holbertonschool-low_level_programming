@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 /**
  * main - check the code
  *
@@ -11,6 +11,4 @@ struct dog
     float age;
     char *owner;
 };
-int main()
-struct dog my_dog;
 
