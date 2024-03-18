@@ -13,9 +13,11 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 if (array == NULL || action == NULL)
 	return;
+/* Si le tableau ou la fonction d'action est NULL, on quitte la fonction*/
 while (size-- > 0)
 	{
 	action(*array);
+/*Appelle la fonction d'action sur l'élément actuel du tableau*/
 	array++;
 	}
 }
