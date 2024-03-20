@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 int result, num1, num2;
-int (*ptr) (int, int) = get_op_func(argv[2]);
+char *ptr;
 
 	if (argc != 4)
 	{
@@ -21,7 +21,7 @@ int (*ptr) (int, int) = get_op_func(argv[2]);
 	}
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
-
+ptr = argv[2];
 	if ((num1 == 0 && *argv[1] != '0') || (num2 == 0 && *argv[3] != '0'))
 	{
 		printf("Error\n");
@@ -32,7 +32,7 @@ num2 = atoi(argv[3]);
 		printf("Error\n");
 		exit(99);
 	}
-result = ptr(num1, num2);
+result = get_op_func(ptr) (num1, num2);
 printf("%d\n", result);
 
 return (0);
