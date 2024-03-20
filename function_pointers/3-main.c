@@ -11,26 +11,25 @@
 
 int main(int argc, char *argv[])
 {
-int num1 = atoi(argv[1]);
-int num2 = atoi(argv[3]);
-int (*ptr)(int, int);
-int result;
+int result, num1, num2;
+int (*ptr) (int, int) = get_op_func(argv[2]);
 
 	if (argc != 4)
 	{
-		printf("error%s\n", argv[0]);
+		printf("Error\n");
 		exit(98);
 	}
-	if ((num1 == 0 && argv[1] == 0) || (num2 == 0 && argv[3] == 0))
+num1 = atoi(argv[1]);
+num2 = atoi(argv[3]);
+
+	if ((num1 == 0 && *argv[1] != '0') || (num2 == 0 && *argv[3] != '0'))
 	{
 		printf("error%s %s\n", argv[1], argv[3]);
 		exit(98);
 	}
-	ptr = get_op_func(argv[2]);
-
 	if (ptr == NULL)
 	{
-		printf("error\n");
+		printf("error%s\n", argv[2]);
 		exit(99);
 	}
 result = ptr(num1, num2);
