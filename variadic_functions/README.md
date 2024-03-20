@@ -1,0 +1,1 @@
+variadic function are used to call differents variables and multiple args
