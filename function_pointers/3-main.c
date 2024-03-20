@@ -24,12 +24,12 @@ num2 = atoi(argv[3]);
 
 	if ((num1 == 0 && *argv[1] != '0') || (num2 == 0 && *argv[3] != '0'))
 	{
-		printf("error%s %s\n", argv[1], argv[3]);
+		printf("Error\n");
 		exit(98);
 	}
 	if (ptr == NULL)
 	{
-		printf("error%s\n", argv[2]);
+		printf("Error\n");
 		exit(99);
 	}
 result = ptr(num1, num2);
