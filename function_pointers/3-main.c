@@ -27,7 +27,8 @@ num2 = atoi(argv[3]);
 		exit(98);
 	}
 ptr = argv[2];
-	if (ptr[0] != '+' && ptr[0] != '*' && ptr[0] != '/' && ptr[0] != '%' && ptr[0] != 0)
+	if (ptr[0] != '+' || ptr[0] != '*' || ptr[0] != '/'
+	 || ptr[0] != '%' || ptr[0] != '-'|| ptr[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
