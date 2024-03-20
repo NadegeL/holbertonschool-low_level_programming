@@ -21,6 +21,11 @@ int result;
 		printf("error%s\n", argv[0]);
 		exit(98);
 	}
+	if ((num1 == 0 && argv[1] == 0) || (num2 == 0 && argv[3] == 0))
+	{
+		printf("error%s %s\n", argv[1], argv[3]);
+		exit(98);
+	}
 	ptr = get_op_func(argv[2]);
 
 	if (ptr == NULL)
