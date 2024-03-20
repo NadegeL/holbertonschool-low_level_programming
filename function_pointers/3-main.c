@@ -21,13 +21,13 @@ char *ptr;
 	}
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
-ptr = argv[2];
 	if ((num1 == 0 && *argv[1] != '0') || (num2 == 0 && *argv[3] != '0'))
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (ptr == NULL)
+ptr = argv[2];
+	if (ptr[0] != '+' && ptr[0] != '*' && ptr[0] != '/' && ptr[0] != '%')
 	{
 		printf("Error\n");
 		exit(99);
