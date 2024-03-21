@@ -13,12 +13,15 @@ va_list functions;
 unsigned int i;
 
 va_start(functions, n);
-
+/* Boucle à travers les n premiers arguments*/
 for (i = 0; i < n; i++)
 	{
 	printf("%d", va_arg(functions, int));
+/*Vérifie si ce n'est pas le dernier argument*/
 	if (i != (n - 1) && separator != NULL)
+/*si le séparateur est défini printf("%s", separator)*/
 	printf("%s", separator);
+/*Si c'est le cas, affiche le séparateur*/
 	}
 printf("\n");
 
