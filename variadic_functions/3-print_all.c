@@ -22,7 +22,7 @@ void print_string(va_list all)
 }
 /**
  * print_char: char
- *
+ *@all: format liste
  * Return: new line
 */
 void print_char(va_list all)
@@ -58,7 +58,6 @@ void print_all(const char * const format, ...)
 	const char *separator = "";
 /**
  * print_form - print all format
- *
  * @array: array of struct
  * Return: new line
 */
@@ -67,7 +66,6 @@ struct print_form
 	const char *c;
 	void (*f)(va_list);
 };
-
 struct print_form array[] = {
 	{"s", print_string},
 	{"c", print_char},
@@ -84,11 +82,11 @@ struct print_form array[] = {
 			j = 0;
 			while (j < 4)
 			{
-				if(format[i] == *array[j].c)
+				if (format[i] == *array[j].c)
 				{
-					printf ("%s", separator);
+					printf("%s", separator);
 					array[j].f(all);
-					separator = ",";
+					separator = ", ";
 					break;
 				}
 			j++;
