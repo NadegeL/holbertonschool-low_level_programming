@@ -1,11 +1,9 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
-/**
- *print_strings - print str
- *@char: prt sur str
- *@separator: sep
- *Return: new line
+/*
+ *print_strings - print str.
+ *all: liste.
 */
 void print_string(va_list all)
 {
@@ -20,52 +18,50 @@ void print_string(va_list all)
 	}
 	printf("%s", string);
 }
-/**
- * print_char: char
+/*
+ * print_char: char.
  *@all: format liste
- * Return: new line
 */
 void print_char(va_list all)
 {
 	printf("%c", va_arg(all, int));
 }
-/**
+/*
  * print_int : int
- *
+ * @all:liste
  * Return: new line
 */
 void print_int(va_list all)
 {
 	printf("%d", va_arg(all, int));
 }
-/**
- * print_float - float
- *
- * Return: new line
+/*
+ * print_float - float.
+ * @all: liste.
 */
 void print_float(va_list all)
 {
 	printf("%f", va_arg(all, double));
 }
-/**
- * print_all: all format
- *
- * Return: new line
+/*
+ * print_all: all format.
+ *@format: all forms.
 */
 void print_all(const char * const format, ...)
 {
 	va_list all;
 	const char *separator = "";
 /**
- * print_form - print all format
- * @array: array of struct
- * Return: new line
+ * struct print_form - print all format.
+ * @char: ptr to char.
+ * @f: member.
+ * @c: member.
 */
 struct print_form
 {
 	const char *c;
 	void (*f)(va_list);
-};
+}
 struct print_form array[] = {
 	{"s", print_string},
 	{"c", print_char},
