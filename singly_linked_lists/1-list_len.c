@@ -4,23 +4,19 @@
 #include "lists.h"
 
 /**
- * print_list - print list
+ * print_len- print len of list
  * @count: compteur.
  *
  * Return: count.
  */
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	int count = 0;
 
 	while(h != NULL)
 	{
-	if(h->str == NULL)
-	printf("[%u] %s\n", 0, "(nil)");
-	else
-	printf("[%u] %s\n", h->len, h->str);
-	h = h->next;
 	count++;
+	h = h->next;
 	}
 	return(count);
 }
