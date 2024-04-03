@@ -13,6 +13,10 @@
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *nvElt = malloc(sizeof(list_t));
+unsigned int len = 0;
+
+	if (str != NULL)
+	len++;
 
 	if (head == NULL)
 	return (NULL);
@@ -27,6 +31,7 @@ if (nvElt->str == NULL)
 	free(nvElt);
 	return (NULL);
 	}
+nvElt->len = strlen(str);
 nvElt->next = *head;
 *head = nvElt;
 return (nvElt);
