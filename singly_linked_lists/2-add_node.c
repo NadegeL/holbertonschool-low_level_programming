@@ -29,7 +29,7 @@ if (nvElt->str == NULL)
 	}
 if (str != NULL)
 {
-	while (str[len] !='\0')
+	while (str[len] != '\0')
 	{
 		len++;
 	}
