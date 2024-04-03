@@ -35,7 +35,7 @@ while (*ptr != '\0')
 	len++;
 	ptr++;
 	}
-nvElt->len = strlen(str);
+nvElt->len = len;
 nvElt->next = *head;
 *head = nvElt;
 return (nvElt);
